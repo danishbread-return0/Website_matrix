@@ -1,0 +1,88 @@
+.head1
+{
+    align-items: flex-end;
+    display: flex;
+    gap: 1%;
+}
+header{
+    text-align: center;
+    color:brown;
+    font-family: 'bahnschrift',sans-serif;
+    margin: 0;
+    font-size: 20px;
+}
+p{
+    width: 70%;
+    font-size: 17px;
+    text-align: center;
+    padding: 10px;
+    margin-left: 212px;
+    padding-top: 0px;
+    font-size: 20px;
+}
+
+.img-btn
+{
+  border: none;
+  background: transparent;
+  display: inline-block;
+
+  padding: 0;
+}
+
+.img-btn img
+{
+display: block;    
+  width: 65%;     
+  height: auto;
+  cursor: pointer;
+}
+
+
+.slider img 
+{
+    width: 100%;
+    padding: none;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.navbar ul
+{
+    list-style-type: none;
+    font-size: 22px;
+    gap: 1%;
+    text-align: right;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 0px;
+    margin: 0;
+    transform: translateY(-90%);
+    padding-right: 20px;
+    flex-wrap: nowrap;
+}
+.navbar a
+{
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    color: black;
+     border-bottom: 3px solid transparent;
+    padding-bottom: 4px;
+    padding: 15px;
+    font-family: 'Calibri', sans-serif;
+}
+.navbar a:hover
+{
+    border-bottom-color: brown;
+    
+}
+.navbar li {
+  white-space: nowrap;    
+  align-items: center;
+}
+
+#underlined
+{
+    color: brown;
+}

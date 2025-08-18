@@ -1,0 +1,124 @@
+html, body { margin: 0; padding: 0; }
+.head1
+{
+    align-items: flex-end;
+    display: flex;
+    gap: 10%;
+    position: fixed;
+    background-color: white;
+    padding-top: 2px;
+    padding-bottom: 0;
+}
+img
+{
+    display: block;    
+    width: 45%;     
+    height: auto;
+    cursor: pointer;
+    margin-left: 80px;
+}
+button
+{
+  border: none;
+  background: transparent;
+  display: inline-block;
+  padding: 0;
+}
+.navbar ul
+{
+    list-style-type: none;
+    font-size: 20px;
+    gap: 1%;
+    text-align: right;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 0px;
+    margin: 0;
+    transform: translateY(-50%);
+    padding-right: 20px;
+    flex-wrap: nowrap;
+}
+.navbar a
+{
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    color: black;
+    border-bottom: 3px solid transparent;
+    padding: 15px;
+    font-family: 'Calibri', sans-serif;
+}
+.navbar a:hover
+{
+    border-bottom-color: brown;
+    color: brown;   
+}
+.navbar li {
+  white-space: nowrap;    
+  align-items: center;
+}
+.slider img 
+{
+    width: 100%;
+    padding: none;
+    margin: 0px;
+    box-sizing: border-box;
+    flex: 0 0 100%;
+    scroll-snap-align: start;
+    object-fit: contain;
+    flex-shrink: 0;
+    display: block;
+    object-fit: contain;
+    cursor: default;
+}
+.container
+{
+    padding-left: 0;
+    padding-right: 0;   
+}
+.slider-wrapper
+{
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+.slider
+{
+    display: flex;
+    aspect-ratio: auto;
+    transition: transform 0.5s ease-in-out;
+    will-change: transform;
+}
+.slider-nav
+{
+    display: flex;
+    column-gap: 10px;
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+
+}
+.slider-nav a
+{
+    display: block;
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: #fff;
+    opacity: 0.75;
+    border-radius: 50%;
+    transition: opacity ease 250ms;
+    cursor:pointer;
+}
+.slider-nav a:hover
+{
+    opacity: 1;
+}
+p
+{
+    width: 40px;
+    background-color: transparent;
+}
