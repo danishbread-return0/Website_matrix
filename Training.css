@@ -1,0 +1,117 @@
+
+/*--------------------main image-------------*/
+html, body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+*{
+    box-sizing: border-box;
+}
+
+.hero{
+    position: relative;
+    width: 100%; height: 100vh;
+    overflow: hidden;
+}
+.slideshow{
+    display: flex;
+    width: 300vw; height: 100vh;
+    animation: slideLeft 50s linear infinite;
+    
+}
+.slideshow img{
+    width: 100%; height: 100vh;
+    object-fit: cover;
+    border: none;
+    display: block;
+}
+@keyframes slideLeft{
+    0%{transform: translateX(0);}
+    100%{transform: translateX(-200vw)}
+}
+/*--------------main title-------------*/
+
+.hero-text{
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    z-index: 10;
+    pointer-events: none;
+    font-size: 2rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+}
+.red{
+    color: red;
+}
+/*----------------training list---------------*/
+.course{
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    padding: 50px;
+    gap: 30px;
+}
+.course-left {
+    flex: 0 0 30%;
+    max-width: 30%;
+    height: auto; 
+    aspect-ratio: 4/3;
+}
+.course-left img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    max-height: 100%;
+}
+.vertical-line {
+    width: 2px;
+    background-color: #ccc;
+    height: auto;
+}
+.course-right{
+    flex: 0 0 50%
+}
+.course-right h1{
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+.course-right h2{
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+.course-right p{
+    line-height: 1.6;
+    margin: 10px 0;
+}
+/*--------------button--------------*/
+.btn{
+    margin: 10px 10px 0 0;
+    padding: 10px 15px;
+    border: none;
+    background-color: #c00303;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    display: inline-block;
+    text-decoration: none;
+}
+.btn:active{
+    transform: translate(0px, 5px);
+    -webkit-transform: translate(0px, 5px);
+    box-shadow: 0px 1px 0px 0px;
+}
+.clr{
+    background-color: #a60202;
+    transition: all 0.5s ease-in-out;
+    color: #fffffff3;
+}
+.clr:hover{
+    background-color: #710202;
+    padding: 10px 40px;
+    transform: scale(1.1);
+}
