@@ -1,0 +1,164 @@
+:root
+{
+    --glass-bg: rgba(255,255,255,0.22);
+    --glass-border: rgba(255,255,255,0.35);
+    --text: #222;
+    --accent: #cc2e2e;
+    --radius: 22px;
+    --shadow: 0 10px 30px rgba(0,0,0,.18);
+    font-family: Arial, Helvetica, sans-serif;
+}
+body,html
+{
+    margin:0;
+    padding:0;
+}
+.hero
+{
+    min-height: 100dvh;
+    background: url("../images/img14.jpg") center/cover no-repeat fixed;
+    position: relative;
+    padding: 40px clamp(16px, 4vw, 60px);
+    color: var(--text);
+}
+.overlay
+{
+    position: absolute; 
+    inset:0;
+    background: rgba(255,255,255,.35);
+    backdrop-filter: blur(1px);
+    z-index:0;
+}
+.title
+{
+    position: relative;
+    z-index: 1;
+    margin: 0 auto clamp(20px, 3vw, 40px);
+    max-width:1100px;
+    font-size: clamp(32px, 5vw, 56px);
+    letter-spacing: .5px;
+    text-align: center;
+}
+.title span
+{
+color: var(--accent);
+}
+
+.grid
+{
+    position: relative;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: clamp(20px, 3vw, 36px);
+    max-width: 1100px;
+    margin: 0 auto;
+}
+.card
+{
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    backdrop-filter: blur(8px);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    padding: clamp(18px, 2.5vw, 28px);
+}
+.info h2
+{
+    font-size: clamp(22px, 3vw, 32px);
+    margin: 0 0 6px;
+}
+.info h3
+{
+    margin: 12px 0 6px;
+    font-size: clamp(16px, 2vw, 20px);
+}
+.info p
+{
+    margin: 0 0 12px;
+    line-height: 1.5;
+}
+.info .line
+{
+    height:2px;
+    width: 100%;
+    background: rgba (0,0,0,.15);
+    margin: 6px 0 10px;
+ }
+ .info .divider
+ {
+    height:1px; width:100%;
+    background: rgba(0,0,0,.15);
+    margin: 14px 0;
+ }
+ .contact-list
+ {
+    margin: 8px 0 0;
+    padding: 0 0 0 18px;
+ }
+ .contact-list li
+ {
+    margin: 6px 0;
+ }
+ .form
+ {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 14px;
+ }
+ .form label 
+ {
+    display: flex;
+    flex-direction: column; gap: 6px;
+    font-weight: 600;
+ }
+ .form input, .form textarea
+ {
+    width: 100%;
+    padding: 12px 12px;
+    border-radius: 12px;
+    border: 1px solid rgba(0,0,0,.15);
+    background: rgba(255,255,255,.85);
+    outline: none;
+    font: inherit;
+ }
+ .form input:focus, .form textarea:focus 
+ {
+    border-color: rgba(0,0,0,.35);
+ }
+ .form select
+ {
+    width: 100%;
+    padding: 12px 12px;
+    border-radius: 12px;
+    border: 1px solid rgba(0,0,0,.15);
+    background: rgba(255,255,255,.85);
+    outline: none;
+    font: inherit;
+ }
+ .form select:focus
+ {
+    border-color: rgba(0,0,0,.35);
+ }
+ .btn
+ {
+    justify-self: start;
+    border: 0;
+    padding: 12px 22px;
+    border-radius: 4px;
+    background: var(--accent);
+    color: #fff;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 6px 16px rgba(204,46,46,.35);
+ }
+ .btn:active
+{ 
+    transform: translateY(1px); 
+}
+
+@media (max-width: 950px)
+{
+  .grid{ grid-template-columns: 1fr; }
+  .btn{ justify-self: stretch; }
+}

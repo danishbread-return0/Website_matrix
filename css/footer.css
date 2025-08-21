@@ -1,0 +1,9 @@
+.copyright p
+{
+    text-align: center;
+    padding: 28px;
+    color: black;
+    background-color: grey;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+}
