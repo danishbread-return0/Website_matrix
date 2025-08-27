@@ -91,7 +91,7 @@ html, body{
 /*--------------button--------------*/
 .btn{
     margin: 10px 10px 0 0;
-    padding: 10px 15px;
+    padding: 10px 20px;
     border: none;
     background-color: #c00303;
     color: white;
@@ -107,11 +107,11 @@ html, body{
 }
 .clr{
     background-color: #a60202;
-    transition: all 0.5s ease-in-out;
+    transition: all 0.3s ease-in-out;
     color: #fffffff3;
 }
 .clr:hover{
     background-color: #710202;
-    padding: 10px 40px;
+    padding: 10px 20px;
     transform: scale(1.1);
 }

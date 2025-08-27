@@ -46,7 +46,7 @@
 
                 <h2>Contact Hours</h2>
                 <p>Formal Class - 24 Hours<br>Practical - 6 Hours<br>Assessment - 1 Day</p>
-                <button class="btn clr">Training Schedule</button>
+                <button class="btn clr"data-page="">Training Schedule</button>
                 <button class="btn clr">Application Requirements (Grade 1)</button>
                 <button class="btn clr">Application Requirements (Grade 2)</button>
        
@@ -219,5 +219,6 @@
             </div>
         </div>
     </section>
+    <script>src="Training.js"</script>
 </body>
 </html>
