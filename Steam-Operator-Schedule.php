@@ -12,7 +12,7 @@
 
         <section class="schedule-elements-box">
             <header class="schedule-main-headline">
-                <h1 class="center">Steam Boiler Operator<span class="red"> Course</span></h1> 
+                <h1 class="center">Steam Boiler Operator (Grade 1 & Grade 2)<span class="red"> Course</span></h1> 
             </header>
         </section>
         <!-- schedule container -->
@@ -29,8 +29,8 @@
             <section class="schedule-box-container">
                 <div class="schedule-box red">
                     <h2>September 2025</h2>
-                    <p>Date Training : <b>19, 20, 21 & 22 August 2025 </b>
-                    <br>Closing Date  : <b>15 August 2025</b></p>
+                    <p>Date Training : <b>23, 24, 25 & 26 September 2025 </b>
+                    <br>Closing Date  : <b>19 September 2025</b></p>
                     <p>Register for Boiler Operator Course</p>
                     <button class="red-button clr">
                         ENROLL NOW
